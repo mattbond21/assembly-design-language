@@ -1,50 +1,6 @@
 
 /* Colors  -------------------*/
 
-$white: #ffffff;
-
-$gray-chalk: #F8FAFC; /* canvas background */
-$gray-stone: #E6EAEF; /* borders */
-$gray-smoke: #A2ABB4; /* incidental text and icons */
-$gray-slate: #697482; /* secondary text */
-$gray-granite: #22272B; /* primary text */
-
-$night-granite: #141719; /* canvas background */
-$night-slate: #22272B; /* header and card backgrounds */
-$night-smoke: #444D55; /* incidental text and icons */
-$night-stone: #86909D; /* secondary text */
-$night-chalk: #F8FAFC; /* primary text */
-
-$light-blue-jay: rgba(64,112,208,0.2);
-$blue-jay: rgba(64,112,208,1);
-$dark-blue-jay: #2B58B0;
-
-$night-blue-jay: #6479D8;
-
-$light-teal: #DEF7F7;
-$teal: #3CCFCF;
-$dark-teal: #1D7777;
-
-$orange: #F08700;
-
-$light-green: #D4F7E6;
-$green: #23B26D;
-$dark-green: #19804E;
-
-$light-coral: #FFE0DB;
-$coral: #FF725B;
-$dark-coral: #DB1F00;
-
-$light-yellow: #FFF0BD;
-$yellow: #FFCD1F;
-$dark-yellow: #CC9E00;
-
-$light-purple: #EEE1FA;
-$dark-purple: #8327D8;
-
-$deep-purple: #363E63;
-
-
 :root {
   --tiny-spacing: 4px;
   --base-spacing: 8px;
@@ -53,37 +9,62 @@ $deep-purple: #363E63;
   --large-spacing: 32px;
   --xlarge-spacing: 48px;
   --xxlarge-spacing: 64px;
-  --white-color: $white;
-  --gray-chalk-color: $gray-chalk;
-  --gray-stone-color: $gray-stone;
-  --gray-smoke-color: $gray-smoke;
-  --gray-slate-color: $gray-slate;
-  --gray-granite-color: $gray-granite;
-  --blue-jay-color: $blue-jay;
-  --dark-blue-jay-color: $dark-blue-jay;
-  --card-background-color: $white;
-  --sidebar-background-color: $white;
-  --tab-item-color: $gray-slate;
-  --sidebar-border: $gray-stone;
-  --card-meta-data: $gray-smoke;
-  --green-color: $green;
-  --red-color: $dark-coral;
+
+  --white-color: #ffffff;
+  --gray-chalk-color: #F8FAFC; /* canvas background */
+  --gray-stone-color: #E6EAEF; /* borders */
+  --gray-smoke-color: #A2ABB4; /* incidental text and icons */
+  --gray-slate-color: #697482; /* secondary text */
+  --gray-granite-color: #22272B; /* primary text */
+
+  --light-blue-jay-color: rgba(64,112,208,0.2);
+  --blue-jay-color: rgba(64,112,208,1);
+  --dark-blue-jay-color: #2B58B0;
+
+  --light-teal-color: #DEF7F7;
+  --teal-color: #3CCFCF;
+  --dark-teal-color: #1D7777;
+
+  --orange-color: #F08700;
+
+  --light-green-color: #D4F7E6;
+  --green-color: #23B26D;
+  --dark-green-color: #19804E;
+
+  --light-coral-color: #FFE0DB;
+  --coral-color: #FF725B;
+  --dark-coral-color: #DB1F00;
+
+  --light-yellow-color: #FFF0BD;
+  --yellow-color: #FFCD1F;
+  --dark-yellow-color: #CC9E00;
+
+  --light-purple-color: #EEE1FA;
+  --dark-purple-color: #8327D8;
+
+  --deep-purple--color: #363E63;
+
+  --card-background-color: var(--white-color);
+  --sidebar-background-color: var(--white-color);
+  --tab-item-color: var(--gray-slate-color);
+  --sidebar-border: var(--gray-stone-color);
+  --card-meta-data: var(--gray-smoke-color);
+
 }
 
 [data-theme="dark"] {
-  --white-color: $white;
-  --gray-chalk-color: $night-granite;
-  --gray-stone-color: $night-slate;
-  --gray-smoke-color: $night-smoke;
-  --gray-slate-color: $night-stone;
-  --gray-granite-color: $gray-chalk;
-  --blue-jay-color: $night-blue-jay;
-  --dark-blue-jay-color: $blue-jay;
-  --card-background-color: $night-slate;
-  --sidebar-background-color: $night-slate;
-  --tab-item-color: $night-stone;
-  --sidebar-border: $night-granite;
-  --card-meta-data: $night-stone;
+  --gray-chalk-color: #141719; /* canvas background */
+  --gray-stone-color: #22272B; /* header and card backgrounds */
+  --gray-smoke-color: #444D55; /* incidental text and icons */
+  --gray-slate-color: #86909D; /* secondary text */
+  --gray-granite-color: #F8FAFC; /* primary text */
+  --blue-jay-color: #6479D8;
+  --dark-blue-jay-color: var(--blue-jay-color);
+  --card-background-color: var(--night-slate-color);
+  --sidebar-background-color: var(--night-slate-color);
+  --tab-item-color: var(--night-stone-color);
+  --sidebar-border: var(--night-granite-color);
+  --card-meta-data: var(--night-stone-color);
 }
 
 
