@@ -8,9 +8,53 @@ next: Typography
 next-path: foundations/typography
 ---
 
-<h1>{{ page.title }}</h1>
-<p>
-    Content
-</p>
+<h2>{{ page.title }}</h2>
+<h2 class="sub-head">Assembly layouts encourage consistency across platforms and screen sizes by using uniform elements and spacing. This helps our customers move between devices without having to relearn the application each time.</h2>
+
+<span class="heading-border"></span>
+
+<h3>Spacing</h3>
+<p>By using our standard spacing, the user interface remains consistent, can be scaled easily, and uses rhythm to align elements correctly.</p>
+<p>We utilize an 8pt “soft grid” for base spacing and element sizes. We make an exception for using 4pt as a half unit only.</p>
+<p>These spacing guidelines apply to both horizontal and vertical spacing between elements.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/img-layout-spacing-800.png" alt="Spacing sizes">
+  </div>
+</div>
+
+<h3>Adaptivity and breakpoints</h3>
+<h4>Native</h4>
+<p>Assembly components support responsive scaling to support different native screen sizes. Even though components can automatically adapt, it’s still best practice to check your designs on various device sizes. When recommending a new component ensure it is designed in Phone and Tablet sizes.</p>
+
+<h4>Web</h4>
+<p>On web, components are placed in a responsive grid that has several breakpoints that account for viewing Quizlet on phone, tablet, and desktop.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/img-layout-web-breakpoints-800.png" alt="Web layout breakpoints">
+  </div>
+</div>
+
+<h3>Units</h3>
+<h4>Native</h4>
+<p>On mobile, screen pixel density may vary between devices, so it’s preferable to use points for sizing. Points are translated into real pixels depending on the device density. We always design in 1x, where one 1pt equals 1px, and we scale up the design for different devices.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/img-layout-iphone-sizes-800.png" alt="iPhone sizes">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/img-layout-ipad-sizes-800.png" alt="iPad sizes">
+  </div>
+</div>
+
+<h4>Web</h4>
+<p>While some monitors can have different pixel densities, we continue using pixels for spacing and measurements. Our pixel units will be transformed to rems in production code.</p>
+
 
 {% include pagination-links.html %}

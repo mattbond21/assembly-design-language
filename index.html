@@ -8,32 +8,44 @@ next-path: foundations/colors
 ---
 
 <h1>Assembly Design Language</h1>
-<h2 class=sub-head>At Quizlet, we want to design empowering experiences for our users. We&rsquo;ve implemented an evolving resource for creating harmonious, simple experiences.</h2>
+<h2 class=sub-head>We want to design empowering experiences for Quizlet users. We&rsquo;ve implemented an evolving resource for creating harmonious, simple experiences.</h2>
 
 <span class="heading-border"></span>
 
-<h2>What is this?</h2>
+<h3>What is Assembly?</h3>
 <p>Assembly is a collection of components defined by shared principles and patterns. Assembly allows for quick iteration using a shared vocabulary across design, engineering, and other disciplines. The design team tries to solve challenging interactions at the beginning, and then apply the solutions consistently across Quizlet&mdash;making sure people only have to learn our product once.</p>
 
-<!-- <h2>Where can I give feedback, make requests, or ask a question?</h2>
-<p>There is a <a href="https://app.asana.com/0/470916106130991/470916106130991" target="_blank">Design System Inbox</a> project set up or you can jump into our #living-styleguide Slack channel.</p> -->
+<h3>Where to start</h3>
+<p>Assembly is designed with solid foundations in mind. These foundations are used to retain the Quizlet brand through thoughtful use of color, typography, layout, and iconography. This is the source of truth for developers and designers working with Assembly UI.</p>
 
-<!-- <h1>Principles</h1>
-<p>Things in here. These are the core principles that we use to design at Quizlet. Together, they compose the purest vision of the system.</p>
+<p>Foundations are global variables that are set in the codebase, meaning that changning a value will change it everywhere in the product. Overwriting foundation values is not recommended since any future changes will not be reflected, and in the short term, will cause fragmentation in the product experience.</p>
 
-<h2>Allow users to focus without interference</h2>
-<p>A user&rsquo;s focus should be in their control, only distract users with changes that are personally relevant.</p>
+<h3>Where can I give feedback, make requests, or ask a question?</h3>
+<p>Come and chat with us in the #assembly Slack channel.</p>
 
-<h2>Increase confidence through clarity</h2>
-<p>Within the application, and more broadly within teams, it is unambiguous what is happening and why.</p>
+<span class="heading-border"></span>
 
-<h2>Foster productive and emotionally satisfying interpersonal dynamics</h2>
-<p>Users feel like they are part of a team, where they can count on each other to do their part, and feel like they&rsquo;re moving forward towards a common goal.</p>
+<h3>Principles</h3>
+<h4>Design together</h4>
+<p>Worry less about fragmentation. Naturally design in step with each other by utilizing existing components made to fit together.</p>
 
-<h2>Design for fast, effortless, and intentional interactions</h2>
-<p>Simple and common tasks should be frictionless and obvious; complex tasks should feel efficient and delightful. But, speed should not lead to inaccuracies.</p>
+<h4>Build on each other's solutions</h4>
+<p>Stop solving the same problems over and over again. Take advantage of the the solutions of your peers so you can focus on more complex problems.</p>
 
-<h2>Empower everyone through progressive discoverability</h2>
-<p>Everyone at all levels of experience with Quizlet should feel like they know how to use the product, regardless of how many features they use.</p> -->
+<h4>Be more efficient</h4>
+<p>Get back the time you would have spent red-lining specs. Components implemented correctly in code are already properly spaced and measured. That means you can spend less time overseeing implementation and more time designing.</p>
+
+<!--
+<h3>Evolution</h3>
+<h3 class="sub-head">Necessary, non-destructive, and abstractable. As a crafted system, each addition demonstrates these attributes to ensure that evolution is progressive and sustainable.</h3>
+
+<h4>Necessary, non-destructive, and abstractable</h4>
+<p>Before introducing new components or extensions to components consider these statements. Each component is necessary, in that there is no other component that can do what it does. It is non-destructive to the system in form and behavior so that it does not introduce regression. And it is not a local optimization but can benefit multiple other scenarios.</p>
+
+<h4>Office hours (In review)</h4>
+<p>These are regular time slots where designers can answer questions and provide direction on the usage of the system. If conflict arises, resolution should be sought in Component workshops.</p>
+
+<h4>Component workshops (In review)</h4>
+<p>These are working sessions for feature and systems designers to work together to resolve conflicts between new designs and existing components. Resolutions that change, remove, or introduce new components are then added into the Component library.</p> -->
 
 {% include pagination-links.html %}

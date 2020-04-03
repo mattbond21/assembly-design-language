@@ -5,44 +5,43 @@
 
 <body>
 
-    <div class="header">
-    </div>
+  <app>
+    <div class="empty-sidebar">
+      <div id="sidebar">
+        <div class="nav-logo">
+          <a href="{{ site.baseurl }}">
+            <img src="{{ site.baseurl }}images/logo/logo-24.svg" class="logo">
+          </a>
+        </div>
 
-    <div class="container main-section">
-      <div class="row">
-        <div class="three-col">
-          <div id="tree-nav-container">
-            <a href="{{ site.baseurl }}">
-              <img src="{{ site.baseurl }}images/logo/quizlet-design-logo.png" class="logo">
-            </a>
-            <ul class="o-list-ui tree-nav {{ include.display }}">
-                <li{% if page.title == 'Overview' %} class="nav-tree-node-active"{% endif %}><a href="{{ site.baseurl }}">Overview</a></li>
-                <li class="nav-tree-node {% if page.section == 'Foundations' %}nav-tree-node-is-open{% endif %}">
-                    <a>Foundations</a>
-                    <ul>{% include foundations-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Components' %}nav-tree-node-is-open{% endif %}">
-                    <a>Components</a>
-                    <ul>{% include components-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Content' %}nav-tree-node-is-open{% endif %}">
-                    <a>Content</a>
-                    <ul>{% include content-nav.html %}</ul>
-                </li>
-                <li class="nav-tree-node {% if page.section == 'Resources' %}nav-tree-node-is-open{% endif %}">
-                    <a>Resources</a>
-                    <ul>{% include resources-nav.html %}</ul>
-                </li>
-            </ul>
-          </div>
+        <div class="main-nav">
+          <h5 class="nav-section-header">Foundations</h5>
+          <ul class="nav-name">{% include foundations-nav.html %}</ul>
         </div>
-        <div class="col">
-            {{ content }}
+
+        <div class="main-nav">
+          <h5 class="nav-section-header">Components</h5>
+          <ul class="nav-name">{% include components-nav.html %}</ul>
         </div>
+
+        <!-- <div class="main-nav">
+          <h5 class="nav-section-header">Content</h5>
+          <ul class="nav-name">{% include content-nav.html %}</ul>
+        </div> -->
+
+      </div> <!-- #sidebar -->
+    </div> <!-- .empty-sidebar -->
+
+    <div id="main">
+      <div class="main-container">
+
+        {{ content }}
+
       </div>
     </div>
+  </app>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
     <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

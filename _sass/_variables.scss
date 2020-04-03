@@ -1,20 +1,92 @@
+
 /* Colors  -------------------*/
 
-/* Gray  -------------------*/
 $white: #ffffff;
-$gray-1: #f6f8f9; /* backgrounds */
-$gray-2: #edf1f2;
-$gray-3: #e0e6e8; /* borders */
-$gray-4: #d5dce0;
-$gray-5: #b7bfc6;
-$gray-6: #9ca6af;  /* text */
-$gray-7: #848f99; /* borders */
-$gray-8: #646f79; /* text */
-$gray-9: #222b37; /* sidebar */
-$gray-10: #151b26; /* text */
 
-$navy: #4257B2;
-$indigoDark: #3B4C9B;
+$gray-chalk: #F8FAFC; /* canvas background */
+$gray-stone: #E6EAEF; /* borders */
+$gray-smoke: #A2ABB4; /* incidental text and icons */
+$gray-slate: #697482; /* secondary text */
+$gray-granite: #22272B; /* primary text */
+
+$night-granite: #141719; /* canvas background */
+$night-slate: #22272B; /* header and card backgrounds */
+$night-smoke: #444D55; /* incidental text and icons */
+$night-stone: #86909D; /* secondary text */
+$night-chalk: #F8FAFC; /* primary text */
+
+$light-blue-jay: rgba(64,112,208,0.2);
+$blue-jay: rgba(64,112,208,1);
+$dark-blue-jay: #2B58B0;
+
+$night-blue-jay: #6479D8;
+
+$light-teal: #DEF7F7;
+$teal: #3CCFCF;
+$dark-teal: #1D7777;
+
+$orange: #F08700;
+
+$light-green: #D4F7E6;
+$green: #23B26D;
+$dark-green: #19804E;
+
+$light-coral: #FFE0DB;
+$coral: #FF725B;
+$dark-coral: #DB1F00;
+
+$light-yellow: #FFF0BD;
+$yellow: #FFCD1F;
+$dark-yellow: #CC9E00;
+
+$light-purple: #EEE1FA;
+$dark-purple: #8327D8;
+
+$deep-purple: #363E63;
+
+
+:root {
+  --tiny-spacing: 4px;
+  --base-spacing: 8px;
+  --small-spacing: 16px;
+  --medium-spacing: 24px;
+  --large-spacing: 32px;
+  --xlarge-spacing: 48px;
+  --xxlarge-spacing: 64px;
+  --white-color: $white;
+  --gray-chalk-color: $gray-chalk;
+  --gray-stone-color: $gray-stone;
+  --gray-smoke-color: $gray-smoke;
+  --gray-slate-color: $gray-slate;
+  --gray-granite-color: $gray-granite;
+  --blue-jay-color: $blue-jay;
+  --dark-blue-jay-color: $dark-blue-jay;
+  --card-background-color: $white;
+  --sidebar-background-color: $white;
+  --tab-item-color: $gray-slate;
+  --sidebar-border: $gray-stone;
+  --card-meta-data: $gray-smoke;
+  --green-color: $green;
+  --red-color: $dark-coral;
+}
+
+[data-theme="dark"] {
+  --white-color: $white;
+  --gray-chalk-color: $night-granite;
+  --gray-stone-color: $night-slate;
+  --gray-smoke-color: $night-smoke;
+  --gray-slate-color: $night-stone;
+  --gray-granite-color: $gray-chalk;
+  --blue-jay-color: $night-blue-jay;
+  --dark-blue-jay-color: $blue-jay;
+  --card-background-color: $night-slate;
+  --sidebar-background-color: $night-slate;
+  --tab-item-color: $night-stone;
+  --sidebar-border: $night-granite;
+  --card-meta-data: $night-stone;
+}
+
+
 
 /* Fonts  -------------------*/
 
