@@ -3,11 +3,11 @@
    ========================================================================== */
 
 html {
-    color: var(--gray-granite-color);
+    color: var(--ink-300);
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Hurme Sans 2', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: var(--white-color);
+    background: var(--neutral-100);
     text-rendering: optimizeLegibility;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -42,7 +42,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid var(--gray-stone-color);
+    border-top: 1px solid var(--neutral-300);
     margin: 1em 0;
     padding: 0;
 }
@@ -91,7 +91,7 @@ textarea {
 h1, h2, h3, h4, h5
 .h1, .h2, .h3, .h4, .h5 {
  font-weight: 600;
- color: var(--gray-granite-color);
+ color: var(--ink-300);
 }
 
 h1, .h1,
@@ -149,14 +149,14 @@ pre {
   white-space: pre-wrap;
   font-weight: 500;
   margin: 1em 0;
-  background-color: var(--gray-chalk-color);
+  background-color: var(--neutral-200);
   border-radius: 4px;
   padding: 24px 40px !important;
 }
 
 a,
 a:visited {
-  color: var(--blue-jay-color);
+  color: var(--indigo-400);
   text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ strong {
 }
 
 h2.sub-head {
-  color: var(--gray-slate-color);
+  color: var(--ink-200);
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -198,7 +198,7 @@ h1.hero-title {
 }
 
 span.heading-border {
-  background: var(--gray-stone-color);
+  background: var(--neutral-300);
   width: 48px;
   height: 2px;
   display: block;
@@ -206,11 +206,12 @@ span.heading-border {
 }
 
 .hr {
-  background: var(--gray-stone-color);
+  background: var(--neutral-300);
   width: 50px;
   height: 2px;
   display: block;
   margin: 24px auto;
+  border-radius: 2px;
 }
 
 
@@ -218,26 +219,28 @@ span.heading-border {
 ------------------------- */
 
 .text-do {
-  color: var(--green-color);
+  color: var(--green-400);
 }
 .text-dont {
-  color: var(--dark-coral-color);
+  color: var(--coral-400);
 }
 
 .line {
-  background: var(--card-background-color);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  height: 2px;
+  background: var(--neutral-300);
+  border-top-left-radius: var(--large-spacing);
+  border-top-right-radius: var(--large-spacing);
+  height: 4px;
   width: 100%;
+  position: relative;
+  top: 4px;
 }
 
 .text-do + .line {
-  background: var(--green-color);
+  background: var(--green-400);
 }
 
 .text-dont + .line {
-  background: var(--dark-coral-color);
+  background: var(--coral-400);
 }
 
 
@@ -245,7 +248,7 @@ span.heading-border {
  ------------------------- */
 
 p {
-  color: var(--gray-slate-color);
+  color: var(--ink-200);
   margin: 0 0 16px;
   font-size: 18px;
 }
@@ -272,13 +275,35 @@ img {
   max-width: 100%;
 }
 
+img.home-page {
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+img.example-image {
+  border-radius: var(--base-spacing);
+}
+
+img.example-image-border {
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--base-spacing);
+}
+
 
 /* Lists */
 
-li {
-  list-style: none;
+ol.call-outs {
+  margin-bottom: var(--xlarge-spacing);
 }
 
+ol.call-outs > li {
+  list-style: numbers;
+  margin-left: var(--large-spacing);
+  margin-bottom: var(--base-spacing);
+}
+
+li {
+  color: var(--ink-200);
+}
 
 /* =================================================
   Tables */
@@ -289,10 +314,10 @@ table {
   margin-bottom: 32px;
 }
 thead {
-  border-bottom: 2px solid var(--gray-stone-color);
+  border-bottom: 2px solid var(--neutral-300);
 }
 tr {
-  border-bottom: 1px solid var(--gray-stone-color);
+  border-bottom: 1px solid var(--neutral-300);
 }
 td,
 th {
@@ -302,6 +327,7 @@ th {
 }
 th {
   vertical-align: top;
+  font-weight: 500;
 }
 td:first-child,
 th:first-child {
@@ -363,28 +389,29 @@ app {
 
 .nav-name > li {
   padding-bottom: 8px;
+  list-style: none;
 }
 
 .nav-name > li > a {
-  color: var(--gray-smoke-color);
+  color: var(--ink-100);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 
   &:hover {
-    color: var(--gray-slate-color);
+    color: var(--ink-200);
     text-decoration: none;
   }
 }
 
 .nav-name > li.nav-active > a {
-  color: var(--blue-jay-color);
+  color: var(--indigo-400);
 }
 
 .nav-section-header {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--gray-granite-color);
+  color: var(--ink-300);
   font-weight: 500;
   font-size: 11px;
   line-height: 20px;
@@ -453,7 +480,7 @@ app {
 .color-swatch {
   margin: 8px;
   border-radius: 6px;
-  background-color: var(--gray-chalk-color);
+  background-color: var(--neutral-200);
 }
 
 .color-swatch-header {
@@ -546,7 +573,7 @@ app {
 
 
 .iframe-buttons {
-  border: 1px solid var(--gray-stone-color);
+  border: 1px solid var(--neutral-300);
   height: 300px;
   width: 100%;
   margin: 8px 0 32px 0;
@@ -565,10 +592,17 @@ app {
 }
 
 .pagination-links {
-  background: var(--gray-chalk-color);
-  border-radius: 4px;
+  background: var(--neutral-200);
+  border-radius: var(--base-spacing);
   margin: 120px 0 40px 0;
+
+  & > .col {
+    padding: 0;
+  }
+
 }
+
+
 
 a.next-previous-links:hover {
   text-decoration: none;
@@ -576,8 +610,8 @@ a.next-previous-links:hover {
 
 .next,
 .previous {
-  padding: 24px;
-  color: var(--gray-slate-color);
+  padding: var(--medium-spacing);
+  color: var(--ink-200);
 }
 
 .next {
@@ -586,21 +620,21 @@ a.next-previous-links:hover {
 
 a.next-previous-links:hover > .next > .title,
 a.next-previous-links:hover > .previous > .title {
-  color: var(--blue-jay-color);
+  color: var(--indigo-400);
 }
 
 .title {
-  color: var(--gray-granite-color);
+  color: var(--ink-300);
   font-weight: 500;
   font-size: 18px;
 }
 
 .next > .title {
-  margin-right: 24px;
+  margin-right: var(--medium-spacing);
 }
 
 .previous > .title {
-  margin-left: 24px;
+  margin-left: var(--medium-spacing);
 }
 
 .icon-20 {
@@ -630,41 +664,41 @@ a.btn {
   font-weight: 600;
   line-height: 20px;
   padding: 7px 10px;
-  background: var(--gray-chalk-color);
+  background: var(--neutral-200);
   border: 1px solid;
-  border-color: var(--gray-chalk-color);
+  border-color: var(--neutral-200);
   border-radius: 4px;
-  color: var(--gray-slate-color);
+  color: var(--ink-200);
   font-size: 13px;
 
   &:hover {
-    background-color: var(--gray-chalk-color);
-    border-color: var(--gray-chalk-color);
-    color: var(--gray-slate-color);
+    background-color: var(--neutral-200);
+    border-color: var(--neutral-200);
+    color: var(--ink-200);
     text-decoration: none;
   }
 }
 
 .btn-primary {
-  background: var(--blue-jay-color);
-  border-color: var(--blue-jay-color);
-  color: var(--white-color);
+  background: var(--indigo-400);
+  border-color: var(--indigo-400);
+  color: var(--neutral-100);
 
   &:hover {
     // background: darken(0.2);
     // border-color: darken(0.2);
-    color: var(--white-color);
+    color: var(--neutral-100);
   }
 }
 
 .btn-link {
-  color: var(--blue-jay-color);
+  color: var(--indigo-400);
   background: rgba(255,255,255,0);
   border-color: rgba(255,255,255,0);
 
   &:hover {
-    background: var(--gray-chalk-color);
-    color: var(--blue-jay-color);
+    background: var(--neutral-200);
+    color: var(--indigo-400);
   }
 }
 
@@ -721,120 +755,25 @@ a.btn {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+ @media (max-width: 1100px) {
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+   .main-container {
+     width: 70%;
+   }
+   .empty-sidebar {
+     width: 20%;
+   }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+ }
 
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+ @media (max-width: 699px) {
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+   .sidebar {
+     display: none;
+   }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+ }

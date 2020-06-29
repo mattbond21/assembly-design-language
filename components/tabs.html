@@ -9,10 +9,56 @@ next-path: components/tooltips
 ---
 
 <h2>{{ page.title }}</h2>
-<h2 class=sub-head>Subline</h2>
 <span class="heading-border"></span>
-<p>
-    Content
-</p>
+
+<p>Tabs are an easy way to organize content by grouping similar information on the same page. This allows content to be viewed without having to navigate away from that page.</p>
+
+<h4>Example</h4>
+<ol class="call-outs">
+  <li><strong>Selected:</strong> The active tab.</li>
+  <li><strong>Unselected:</strong> The other available tabs.</li>
+  <li><strong>Divider:</strong> Separates the tab navigation and content.</li>
+</ol>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/tabs/img-tabs-800.png" class="example-image-border" alt="Tabs anatomy example">
+  </div>
+</div>
+
+<h3>Writing labels</h3>
+<p>Labels should be as short as possible (three words max) to describe the content within the nav item. The page or header above the tabs should provide additional context so labels make sense to the user.</p>
+
+<h3>Implementation</h3>
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>iOS</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>iPadOS</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>Android</td>
+          <td>Not started</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 {% include pagination-links.html %}

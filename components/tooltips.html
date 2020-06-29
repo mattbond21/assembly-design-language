@@ -9,10 +9,50 @@ next-path: content/style -->
 ---
 
 <h2>{{ page.title }}</h2>
-<h2 class=sub-head>Subline</h2>
 <span class="heading-border"></span>
-<p>
-    Content
-</p>
+
+<p>Use tooltips to identify or add a small amount of information to an element. Typically, tooltips are used to help users understand the meaning or purpose of icons, showing the full version of truncated text, or displaying the alt text for an image. Tooltips do not include any interactivity but may help introduce users to keyboard shortcuts.</p>
+
+<p>When writing tooltips, be short and concise. When you need to add more than a single line of extra information, consider using a pop-over instead.</p>
+
+<h3>Behavior</h3>
+<p>The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.</p>
+
+
+
+<h4>Animation</h4>
+<p>Animations for displaying a tooltip will behave slightly differently depending on intent. Initially, when hovering over an element, the tooltip will animate into place with a short delay. When hovering over subsequent elements in quick succession, the tooltip is displayed without animating.</p>
+
+<h3>Implementation</h3>
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>iOS</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>iPadOS</td>
+          <td>Not started</td>
+        </tr>
+        <tr>
+          <td>Android</td>
+          <td>Not started</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 {% include pagination-links.html %}

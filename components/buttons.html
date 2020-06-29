@@ -2,58 +2,93 @@
 layout: default
 section: Components
 title: Buttons
-previous: Avatars
-previous-path: components/avatars
-next: Cards
-next-path: components/cards
+previous: Border radius
+previous-path: components/border-radius
+next: Depth
+next-path: components/depth
 ---
 
 <h2>{{ page.title }}</h2>
 
 <span class="heading-border"></span>
 
-<h3>Usage</h3>
 <p>Use buttons to trigger actions and links. Buttons can contain a combination of a clear label and an icon while links are always text. Buttons are typically placed throughout your UI &mdash; dialogs, modal windows, forms, and toolbars.</p>
 
-<h3>Types</h3>
-
-<h5>Placeholder example component</h5>
-<iframe class="iframe-buttons" src="https://material.io/inline-tools/button/"></iframe>
-
-<h4>Primary button (high emphasis)</h4>
-<p>Primary buttons have more emphasis, as they use a color fill to stand out on the page, and are used as the most important action on the page.</p>
-
-<h4>Secondary button (medium emphasis)</h4>
-<p>Secondary buttons are used for more emphasis than text buttons but are not the most important action on the page.</p>
-
-<h4>Text button (low emphasis)</h4>
-<p>Text buttons are typically used for less important actions.</p>
-
-<h4>Toggle button</h4>
-<p>Toggle buttons group a set of actions together using layout and spacing. They’re used when switching between similar view types of content where an icon represents each options. If you’re looking to use labels, the tab component is likely the correct use.</p>
-
-<h4>Icon button</h4>
-<p>tktk</p>
+<h3>Types and anatomy</h3>
 
 <div class="row">
   <div class="col">
-    <img src="{{ site.baseurl }}images/pages/img-buttons-emphasis-800.png" alt="Buttons emphasis diagram">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-anatomy-800.png" class="example-image-border" alt="Buttons anatomy example">
   </div>
 </div>
 
-<h3>Anatomy</h3>
-<p>tktk: Show all 5 button types as examples with optional icon placement</p>
+<ol class="call-outs">
+  <li><strong>Primary button (high emphasis):</strong> Primary buttons have more emphasis, as they use a color fill to stand out on the page, and are used as the most important action on the page.</li>
+  <li><strong>Secondary button (medium emphasis):</strong> Secondary buttons are used for more emphasis than text buttons but are not the most important action on the page.</li>
+  <li><strong>Text button (low emphasis):</strong> Text buttons are typically used for less important actions.</li>
+  <li><strong>Toggle button:</strong> Toggle buttons group a set of actions together. They’re used when switching between similar view types of content where an icon represents each option, like a list or grid view. If you’re looking to use labels for navigation purposes, please use the tab component instead.</li>
+  <li><strong>Icon button:</strong> Icon buttons are used in toolbars when there are too many actions to display with labels. These are usually the least important actions on the page, and should not have the primary button style applied. If there are more than four actions to be displayed together, use an overflow button and menu to display the remaining actions.</li>
+</ol>
 
 <h3>Hierarchy</h3>
-<h4>Balance obvious, easy, and possible</h4>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-emphasis-800.png" class="example-image" alt="Buttons emphasis diagram">
+  </div>
+</div>
+
+<h4>Only one primary action</h4>
 <p>A layout should contain a single prominent button that makes it clear that other buttons have less importance in the hierarchy. This high-emphasis button commands the most attention.</p>
 
-<h4>Other buttons</h4>
+<h4>Obvious, easy, and possible actions</h4>
 <p>An app can show more than one button in a layout at a time, so a high-emphasis button can be accompanied by medium- and low-emphasis buttons that perform less important actions. When using multiple buttons, ensure the available state of one button doesn’t look like the disabled state of another.</p>
 
-<h3>Placement</h3>
-
 <h3>Labeling</h3>
-<p>Sentence case all the things.</p>
+<p>All button labels are sentence case. They should be as short as possible, while clearly explaining to users what happens when they click the button.</p>
+
+<div class="row">
+  <div class="six-col">
+    <h5 class="text-do">Do</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-labels-correct-400.png" class="example-image" alt="Example of correct button label usage">
+  </div>
+  <div class="six-col">
+    <h5 class="text-dont">Don't</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-labels-incorrect-400.png" class="example-image" alt="Example of incorrect button label usage">
+  </div>
+</div>
+
+<h3>Sizes</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-sizes-800.png" class="example-image" alt="Buttons sizes example">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>Small:</strong> Used in tables or smaller spaces where the UI feels disproportionate .</li>
+  <li><strong>Medium:</strong> .</li>
+  <li><strong>Large:</strong> .</li>
+</ol>
+
+
+<h3>States</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-states-800.png" class="example-image" alt="Buttons states example">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>Default</strong></li>
+  <li><strong>Hover</strong></li>
+  <li><strong>Disabled</strong></li>
+</ol>
+
+
 
 {% include pagination-links.html %}

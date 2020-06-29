@@ -10,61 +10,54 @@
   --xlarge-spacing: 48px;
   --xxlarge-spacing: 64px;
 
-  --white-color: #ffffff;
-  --gray-chalk-color: #F8FAFC; /* canvas background */
-  --gray-stone-color: #E6EAEF; /* borders */
-  --gray-smoke-color: #A2ABB4; /* incidental text and icons */
-  --gray-slate-color: #697482; /* secondary text */
-  --gray-granite-color: #22272B; /* primary text */
+  --neutral-100: #ffffff;
+  --neutral-200: #f6f7fb; /* canvas background */
+  --neutral-300: #edeff4; /* borders */
+  --neutral-400: #d9dde8;
+  --neutral-500: #c3c7d5;
 
-  --light-blue-jay-color: rgba(64,112,208,0.2);
-  --blue-jay-color: rgba(64,112,208,1);
-  --dark-blue-jay-color: #2B58B0;
+  --ink-100: #939bb4; /* incidental text and icons */
+  --ink-200: #646f90; /* secondary text */
+  --ink-300: #303545; /* primary text */
+  --ink-400: #212530;
+  --ink-500: #111218;
 
-  --light-teal-color: #DEF7F7;
-  --teal-color: #3CCFCF;
-  --dark-teal-color: #1D7777;
+  --indigo-100: #eff3fb;
+  --indigo-200: #cedaf3;
+  --indigo-300: #7b89c9;
+  --indigo-400: #4257b2;
+  --indigo-500: #3b4c9b;
 
-  --orange-color: #F08700;
+  --teal-100: #e7f9f9;
+  --teal-200: #cff3f3;
+  --teal-300: #77dddd;
+  --teal-400: #3ccfcf;
+  --teal-500: #28a7a7;
 
-  --light-green-color: #D4F7E6;
-  --green-color: #23B26D;
-  --dark-green-color: #19804E;
+  --yellow-100: #fff9e3;
+  --yellow-200: #ffedab;
+  --yellow-300: #ffdc62;
+  --yellow-400: #ffcd1f;
+  --yellow-500: #997700;
 
-  --light-coral-color: #FFE0DB;
-  --coral-color: #FF725B;
-  --dark-coral-color: #DB1F00;
+  --orange-100: #fff8f0;
+  --orange-200: #fce1c0;
+  --orange-300: #f5ab4c;
+  --orange-400: #f08700;
+  --orange-500: #965501;
 
-  --light-yellow-color: #FFF0BD;
-  --yellow-color: #FFCD1F;
-  --dark-yellow-color: #CC9E00;
+  --green-100: #f2fbf6;
+  --green-200: #c8ecdb;
+  --green-300: #65c999;
+  --green-400: #23b26d;
+  --green-500: #19804f;
 
-  --light-purple-color: #EEE1FA;
-  --dark-purple-color: #8327D8;
+  --coral-100: #fff3f1;
+  --coral-200: #ffdcd6;
+  --coral-300: #ff9c8c;
+  --coral-400: #ff725b;
+  --coral-500: #c34632;
 
-  --deep-purple--color: #363E63;
-
-  --card-background-color: var(--white-color);
-  --sidebar-background-color: var(--white-color);
-  --tab-item-color: var(--gray-slate-color);
-  --sidebar-border: var(--gray-stone-color);
-  --card-meta-data: var(--gray-smoke-color);
-
-}
-
-[data-theme="dark"] {
-  --gray-chalk-color: #141719; /* canvas background */
-  --gray-stone-color: #22272B; /* header and card backgrounds */
-  --gray-smoke-color: #444D55; /* incidental text and icons */
-  --gray-slate-color: #86909D; /* secondary text */
-  --gray-granite-color: #F8FAFC; /* primary text */
-  --blue-jay-color: #6479D8;
-  --dark-blue-jay-color: var(--blue-jay-color);
-  --card-background-color: var(--night-slate-color);
-  --sidebar-background-color: var(--night-slate-color);
-  --tab-item-color: var(--night-stone-color);
-  --sidebar-border: var(--night-granite-color);
-  --card-meta-data: var(--night-stone-color);
 }
 
 
