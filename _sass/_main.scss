@@ -84,6 +84,20 @@ textarea {
    Custom styles
    ========================================================================== */
 
+dl {
+  display: flex;
+}
+
+dd {
+  flex: 1;
+  font-weight: 500;
+}
+
+dt {
+  flex: 0;
+}
+
+
 
 /* Headings
  ------------------------- */
@@ -189,6 +203,14 @@ h2.sub-head {
   font-size: 20px;
   line-height: 28px;
   margin-top: 0;
+}
+
+h2.hero-sub-head {
+  color: var(--ink-200);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 20px;
 }
 
 h1.hero-title {
