@@ -207,7 +207,7 @@ strong {
   font-weight: 500;
   letter-spacing: -1.2px;
   text-align: center;
-  background: -webkit-linear-gradient(45deg, var(--indigo-400), var(--teal-400) 80%);
+  background: -webkit-linear-gradient(45deg, var(--teal-400), var(--indigo-400) 80%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
@@ -516,6 +516,7 @@ app {
   overflow: hidden;
   line-height: 1;
   vertical-align: middle;
+  margin-right: var(--small-spacing);
 }
 
 .avatar-small {
@@ -537,6 +538,87 @@ app {
   height: var(--xxlarge-spacing);
   width: var(--xxlarge-spacing);
 }
+
+.avatar-01 {
+  background-image: url(../images/pages/avatars/avatar-01.png);
+}
+
+.avatar-02 {
+  background-image: url(../images/pages/avatars/avatar-02.png);
+}
+
+.avatar-03 {
+  background-image: url(../images/pages/avatars/avatar-03.png);
+}
+
+.avatar-04 {
+  background-image: url(../images/pages/avatars/avatar-04.png);
+}
+
+.avatar-05 {
+  background-image: url(../images/pages/avatars/avatar-05.png);
+}
+
+.avatar-06 {
+  background-image: url(../images/pages/avatars/avatar-06.png);
+}
+
+.avatar-07 {
+  background-image: url(../images/pages/avatars/avatar-07.png);
+}
+
+.avatar-08 {
+  background-image: url(../images/pages/avatars/avatar-08.png);
+}
+
+.avatar-09 {
+  background-image: url(../images/pages/avatars/avatar-09.png);
+}
+
+.avatar-10 {
+  background-image: url(../images/pages/avatars/avatar-10.png);
+}
+
+.avatar-11 {
+  background-image: url(../images/pages/avatars/avatar-11.png);
+}
+
+.avatar-12 {
+  background-image: url(../images/pages/avatars/avatar-12.png);
+}
+
+.avatar-13 {
+  background-image: url(../images/pages/avatars/avatar-13.png);
+}
+
+.avatar-14 {
+  background-image: url(../images/pages/avatars/avatar-14.png);
+}
+
+.avatar-15 {
+  background-image: url(../images/pages/avatars/avatar-15.png);
+}
+
+.avatar-16 {
+  background-image: url(../images/pages/avatars/avatar-16.png);
+}
+
+.avatar-17 {
+  background-image: url(../images/pages/avatars/avatar-17.png);
+}
+
+.avatar-18 {
+  background-image: url(../images/pages/avatars/avatar-18.png);
+}
+
+.avatar-19 {
+  background-image: url(../images/pages/avatars/avatar-19.png);
+}
+
+.avatar-20 {
+  background-image: url(../images/pages/avatars/avatar-20.png);
+}
+
 
 /* Cards */
 
