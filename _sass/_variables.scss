@@ -58,8 +58,37 @@
   --coral-400: #ff725b;
   --coral-500: #c34632;
 
+
+  --table-header-color: var(--ink-200);
+  --primary-text-color: var(--ink-300);
+  --secondary-text-color: var(--ink-200);
+  --tertiary-text-color: var(--ink-100);
+  --app-background-color: var(--neutral-100);
+  --main-border-color: var(--neutral-300);
+  --active-text-color: var(--indigo-400);
+  --pagination-background: var(--neutral-200);
+  --color-examples-background: var(--neutral-200);
+  --logo-color: var(--indigo-400);
+  --do-example-color: var(--green-400);
+  --dont-example-color: var(--coral-400);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --table-header-color: var(--ink-300);
+    --primary-text-color: var(--neutral-400);
+    --secondary-text-color: var(--ink-100);
+    --tertiary-text-color: var(--ink-100);
+    --app-background-color: var(--ink-500);
+    --main-border-color: var(--ink-200);
+    --active-text-color: var(--indigo-300);
+    --pagination-background: var(--ink-400);
+    --color-examples-background: var(--ink-400);
+    --logo-color: var(--indigo-300);
+    --do-example-color: var(--green-300);
+    --dont-example-color: var(--coral-300);
+  }
+}
 
 
 /* Fonts  -------------------*/
