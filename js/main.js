@@ -84,5 +84,11 @@
       $(this).parent().removeClass('demo-video-paused');
   });
 
+  // drawer
+
+  $(document).ready(function() {
+    $('.drawer').drawer();
+  });
+
 
 }(jQuery);
