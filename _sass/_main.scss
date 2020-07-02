@@ -676,17 +676,20 @@ app {
 /* Card details */
 
 .card-getting-started {
-  background: var(--teal-400) url('../images/covers/cover-qz-1.png') center center no-repeat;
+  background: url('../images/covers/cover-qz-1.png') center center no-repeat;
+  background-color: var(--teal-400);
   background-size: 260px;
 }
 
 .card-foundations {
-  background: var(--indigo-400) url('../images/covers/cover-qz-2.png') center center no-repeat;
+  background: url('../images/covers/cover-qz-2.png') center center no-repeat;
+  background-color: var(--indigo-400);
   background-size: 260px;
 }
 
 .card-components {
-  background: var(--ink-300) url('../images/covers/cover-qz-3.png') center center no-repeat;
+  background: url('../images/covers/cover-qz-3.png') center center no-repeat;
+  background-color: var(--ink-300);
   background-size: 260px;
 }
 
