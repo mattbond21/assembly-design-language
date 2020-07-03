@@ -3,36 +3,35 @@
 
     {% include head.html %}
 
-<body>
+<body class="drawer drawer--right">
+
+  <header role="banner">
+    <nav class="drawer-nav" role="navigation">
+      {% include sidebar-content.html %}
+    </nav>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="{{ site.baseurl }}">
+        <img src="{{ site.baseurl }}images/logo/design-logo-mark.svg" class="logo">
+      </a>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+  </div>
 
   <app>
-    <div class="mobile-header">
-      <button type="button" class="drawer-toggle drawer-hamburger">
-        <span class="drawer-hamburger-icon"></span>
-      </button>
-    </div>
     <div class="empty-sidebar">
       <div id="sidebar">
         <div class="nav-logo">
           <a href="{{ site.baseurl }}">
-            <img src="{{ site.baseurl }}images/logo/logo-24.svg" class="logo">
+            <img src="{{ site.baseurl }}images/logo/design-logo-mark.svg" class="logo">
           </a>
         </div>
 
-        <div class="main-nav">
-          <h5 class="nav-section-header">Getting started</h5>
-          <ul class="nav-name">{% include getting-started-nav.html %}</ul>
-        </div>
-
-        <div class="main-nav">
-          <h5 class="nav-section-header">Foundations</h5>
-          <ul class="nav-name">{% include foundations-nav.html %}</ul>
-        </div>
-
-        <div class="main-nav">
-          <h5 class="nav-section-header">Components</h5>
-          <ul class="nav-name">{% include components-nav.html %}</ul>
-        </div>
+        {% include sidebar-content.html %}
 
       </div> <!-- #sidebar -->
     </div> <!-- .empty-sidebar -->

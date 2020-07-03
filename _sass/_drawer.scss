@@ -49,24 +49,34 @@
 }
 
 /*!------------------------------------*\
-    Left
+    Right
 \*!------------------------------------*/
 
-.drawer--left .drawer-nav {
-  left: -380px;
-  -webkit-transition: left .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-  transition: left .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+.drawer--right .drawer-nav {
+  right: -380px;
+  -webkit-transition: right .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: right .3s cubic-bezier(0.190, 1.000, 0.220, 1.000);
   padding: 32px 24px;
 }
 
-.drawer--left.drawer-open .drawer-nav,
-.drawer--left .drawer-hamburger,
-.drawer--left.drawer-open .drawer-navbar .drawer-hamburger {
-  left: 0;
+.drawer--right.drawer-open .drawer-nav,
+.drawer--right .drawer-hamburger,
+.drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+  right: 0;
 }
 
-.drawer--left.drawer-open .drawer-hamburger {
-  left: 380px;
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 380px;
+}
+
+
+/*!------------------------------------*\
+    Toggle
+\*!------------------------------------*/
+
+
+.drawer-toggle {
+  align-content: flex-end;
 }
 
 
@@ -75,20 +85,22 @@
 \*!------------------------------------*/
 
 .drawer-hamburger {
-  position: fixed;
   z-index: 99;
   top: 0;
   display: block;
   box-sizing: content-box;
-  width: 18px;
+  width: 20px;
   padding: 0;
-  padding-top: 24px;
-  padding-right: 20px;
-  padding-bottom: 24px;
-  padding-left: 22px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
   border: 0;
   outline: 0;
   background-color: transparent;
+  margin-right: 8px;
+  top: -8px;
+  position: relative;
 }
 
 .drawer-hamburger:hover {
@@ -103,7 +115,6 @@
 }
 
 .drawer-hamburger-icon,
-.drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
   width: 100%;
   height: 2px;
@@ -114,13 +125,13 @@
 .drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
   position: absolute;
-  top: -6px;
+  top: -8px;
   left: 0;
   content: ' ';
 }
 
 .drawer-hamburger-icon:after {
-  top: 6px;
+  top: 8px;
 }
 
 .drawer-open .drawer-hamburger-icon {
@@ -165,13 +176,12 @@
   }
 
   /*! Left */
-  .drawer--sidebar.drawer--left .drawer-nav {
-    left: 0;
-    border-right: 1px solid #ddd;
+  .drawer--sidebar.drawer--right .drawer-nav {
+    right: 0;
   }
 
-  .drawer--sidebar.drawer--left .drawer-contents {
-    margin-left: 12.5rem;
+  .drawer--sidebar.drawer--right .drawer-contents {
+    margin-right: 12.5rem;
   }
 
   /*! container */

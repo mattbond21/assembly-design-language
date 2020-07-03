@@ -182,7 +182,7 @@ strong {
 }
 
 .logo {
-  width: 32px;
+  width: 100px;
   height: 32px;
 }
 
@@ -292,13 +292,14 @@ span.heading-border {
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: translate(0px,-10px);
+    transform: translate(0px,10px);
   }
   100% {
     opacity: 1;
     transform: translate(0,0);
   }
 }
+
 
 
 /* Do and don't boxes
@@ -505,6 +506,13 @@ app {
   line-height: 20px;
   margin: 0 0 8px 0;
 }
+
+.mobile-header {
+  display: none;
+}
+
+
+
 
 
 .avatar {
@@ -1104,25 +1112,43 @@ a.btn {
    .main-container {
      max-width: 840px;
    }
+
  }
 
  @media (max-width: 1024px) {
 
    .main-container {
      width: 90%;
-     margin-top: 64px;
    }
 
    .empty-sidebar {
      display: none;
    }
 
+   .mobile-header {
+     background-color: rgba(255,255,255,0.7);
+     height: 56px;
+     width: 100%;
+     display: flex;
+     border-bottom: 1px solid rgba(0,0,0,0.05);
+     position: fixed;
+     backdrop-filter: blur(5px);
+     z-index: 50;
+   }
+
+   .mobile-header-logo {
+     align-self: center;
+     flex: auto;
+     margin-left: 24px;
+   }
+
  }
 
  @media (max-width: 800px) {
 
-   .main-container {
-     margin-top: 48px;
+   .home-hero > h1 {
+     font-size: 44px;
+     line-height: 1.3;
    }
 
  }

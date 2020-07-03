@@ -42,7 +42,7 @@
 
 
 /* Devices larger than 700px */
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
 	.one-col										{ flex-basis: 8.333% !important; }
 	.two-col										{ flex-basis: 16.666% !important; }
 	.three-col									{ flex-basis: 25% !important; }
@@ -65,7 +65,7 @@
 .justify-content-end     					{ justify-content: flex-end !important; }
 .justify-content-center  					{ justify-content: center !important; }
 
-@media (max-width: 1199px) {
+@media (max-width: 1099px) {
 
 	.container {
 		width: 90%;
