@@ -90,5 +90,14 @@
     $('.drawer').drawer();
   });
 
+  $(document).ready(function(){
+  $("#hide-menu").click(function(){
+    $("#mobile-nav-menu").hide();
+  });
+  $("#show-menu").click(function(){
+    $("#mobile-nav-menu").show();
+  });
+});
+
 
 }(jQuery);
