@@ -95,8 +95,8 @@ dd {
 
 dt {
   flex: 0;
+  margin-right: var(--medium-spacing);
 }
-
 
 
 /* Headings
@@ -165,6 +165,17 @@ pre {
   background-color: var(--pagination-background);
   border-radius: 4px;
   padding: 24px 40px !important;
+}
+
+code {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: SFMono-Medium,SF Mono,Segoe UI Mono,Roboto Mono,Ubuntu Mono,Menlo,Courier,monospace;
+  line-height: 1;
+  background: var(--pagination-background);
+  border-radius: 2px;
+  color: var(--coral-400);
+  padding: 3px 6px;
 }
 
 a,
@@ -254,19 +265,23 @@ strong {
   animation-delay: 1.3s;
 }
 
+/* Animation keyframes
+-------------------------------- */
 
-span.beta-label {
-  background: var(--neutral-300);
-  border-radius: 24px;
-  height: 24px;
-  line-height: 1;
-  display: inline-block;
-  color: var(--ink-200);
-  padding: 4px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: var(--medium-spacing);
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translate(0px,10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
 }
+
+
+/* Separators
+-------------------------------- */
 
 span.heading-border {
   background: var(--main-border-color);
@@ -283,21 +298,6 @@ span.heading-border {
   display: block;
   margin: 24px auto;
   border-radius: 2px;
-}
-
-
-/* Animation keyframes
--------------------------------- */
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translate(0px,10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0,0);
-  }
 }
 
 
@@ -513,6 +513,7 @@ app {
 
 
 
+/* Avatar examples */
 
 
 .avatar {
@@ -626,6 +627,109 @@ app {
 .avatar-20 {
   background-image: url(../images/pages/avatars/avatar-20.png);
 }
+
+/* Type examples */
+
+.body-one,
+.body-two,
+.body-three,
+.body-four,
+.body-five {
+  color: var(--ink-300);
+  margin: 0;
+}
+
+.body-one {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.body-two {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.body-three {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-four {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-five {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.link-one,
+.link-two,
+.link-three,
+.link-four,
+.link-five {
+  color: var(--teal-400);
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--teal-500);
+  }
+}
+
+.link-one {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.link-two {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.link-three {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link-four {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link-five {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  color: var(--ink-200);
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-one {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section-two {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.section-three {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 
 
 /* Cards */
