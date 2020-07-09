@@ -18,7 +18,7 @@
   position: fixed;
   z-index: 101;
   top: 0;
-  overflow: auto;
+  overflow: hidden;
   width: 320px;
   height: 100%;
   color: var(--ink-300);
@@ -27,7 +27,7 @@
 
 .drawer-menu {
   margin: 0;
-  padding: 0;
+  padding: 0 0 var(--large-spacing) 0;
   list-style: none;
 }
 
