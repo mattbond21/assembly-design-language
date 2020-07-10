@@ -43,7 +43,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid var(--main-border-color);
-    margin: 1em 0;
+    margin: var(--xlarge-spacing) 0;
     padding: 0;
 }
 
@@ -285,18 +285,19 @@ strong {
 
 span.heading-border {
   background: var(--main-border-color);
-  width: 48px;
+  width: var(--large-spacing);
   height: 2px;
   display: block;
   margin: var(--xlarge-spacing) 0;
+  border-radius: 2px;
 }
 
 .hr {
   background: var(--main-border-color);
-  width: 50px;
+  width: var(--xlarge-spacing);
   height: 2px;
   display: block;
-  margin: 24px auto;
+  margin: var(--medium-spacing) auto;
   border-radius: 2px;
 }
 
@@ -336,7 +337,7 @@ span.heading-border {
 
 p {
   color: var(--secondary-text-color);
-  margin: 0 0 16px;
+  padding: 0 0 var(--small-spacing);
   font-size: 18px;
 }
 
@@ -1031,6 +1032,60 @@ app {
     height: 100%;
 }
 
+
+/* ==========================================================================
+   Status pills
+   ========================================================================== */
+
+.status {
+  display: inline-block;
+  border: 1px solid var(--neutral-400);
+  border-radius: var(--large-spacing);
+  height: 32px;
+  padding: 2px 16px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-right: var(--base-spacing);
+  margin-top: var(--small-spacing);
+}
+
+.status > div {
+  display: inline-block;
+}
+
+.dot {
+  height: var(--base-spacing);
+  width: var(--base-spacing);
+  border-radius: var(--base-spacing);
+  display: inline-block;
+  margin: 0 var(--tiny-spacing) 1px var(--base-spacing);
+}
+
+
+.status-available {
+  color: var(--green-400);
+
+  & .dot {
+    background: var(--green-400);
+  }
+}
+
+.status-not-started {
+  color: var(--coral-500);
+
+  & .dot {
+    background: var(--coral-500);
+  }
+}
+
+.status-in-progress {
+  color: var(--orange-400);
+
+  & .dot {
+    background: var(--orange-400);
+  }
+}
 
 
 

@@ -13,36 +13,27 @@ next-path: components/modal-dialogs
 <span class="heading-border"></span>
 <p>Content</p>
 
-<h3>Implementation</h3>
-<div class="row">
-  <div class="col">
-    <table>
-      <thead>
-        <tr>
-          <th>Platform</th>
-          <th>Availability</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Web</td>
-          <td>Not started</td>
-        </tr>
-        <tr>
-          <td>iOS</td>
-          <td>Not started</td>
-        </tr>
-        <tr>
-          <td>iPadOS</td>
-          <td>Not started</td>
-        </tr>
-        <tr>
-          <td>Android</td>
-          <td>Not started</td>
-        </tr>
-      </tbody>
-    </table>
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
   </div>
+  {% include status-available.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-in-progress.html %}
 </div>
 
 {% include pagination-links.html %}

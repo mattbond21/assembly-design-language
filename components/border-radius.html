@@ -9,10 +9,34 @@ next-path: components/buttons
 ---
 
 <h2>{{ page.title }}</h2>
-<h2 class=sub-head>Subline</h2>
+
 <span class="heading-border"></span>
+
 <p>
     Content
 </p>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-available.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-available.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-available.html %}
+</div>
 
 {% include pagination-links.html %}
