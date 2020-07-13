@@ -223,7 +223,7 @@ strong {
   -webkit-background-clip: text;
 
   animation-name: animate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 0;
   transition-timing-function: ease-out;
   animation-fill-mode: both;
@@ -238,8 +238,8 @@ strong {
   text-align: center;
 
   animation-name: animate;
-  animation-duration: 1s;
-  animation-delay: 0.4s;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
   transition-timing-function: ease-out;
   animation-fill-mode: both;
 }
@@ -248,21 +248,21 @@ strong {
 .foundations-animate,
 .components-animate {
   animation-name: animate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   transition-timing-function: ease-out;
   animation-fill-mode: both;
 }
 
 .getting-started-animate {
-  animation-delay: 0.7s;
+  animation-delay: 0.3s;
 }
 
 .foundations-animate {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .components-animate {
-  animation-delay: 1.3s;
+  animation-delay: 0.8s;
 }
 
 /* Animation keyframes
