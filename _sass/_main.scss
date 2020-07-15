@@ -393,6 +393,10 @@ li {
   color: var(--secondary-text-color);
 }
 
+.main-container > ul > li {
+  margin-left: var(--medium-spacing);
+}
+
 /* =================================================
   Tables */
 
