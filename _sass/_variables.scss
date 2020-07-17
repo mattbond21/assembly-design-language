@@ -12,15 +12,15 @@
 
   --neutral-100: #ffffff;
   --neutral-200: #f6f7fb; /* canvas background */
-  --neutral-300: #edeff4; /* borders */
-  --neutral-400: #d9dde8;
-  --neutral-500: #c3c7d5;
+  --neutral-300: #edeff4; /* dividers */
+  --neutral-400: #d9dde8; /* button and form borders */
+  --neutral-500: #939bb4; /* incidental text and icons */
 
-  --ink-100: #939bb4; /* incidental text and icons */
-  --ink-200: #646f90; /* secondary text */
-  --ink-300: #303545; /* primary text */
-  --ink-400: #212530;
-  --ink-500: #111218;
+  --ink-100: #646f90; /* secondary text */
+  --ink-200: #303545; /* primary text */
+	--ink-300: #282E3E;
+  --ink-400: #1A1D28;
+  --ink-500: #13141B;
 
   --indigo-100: #eff3fb;
   --indigo-200: #cedaf3;
@@ -59,10 +59,10 @@
   --coral-500: #c34632;
 
 
-  --table-header-color: var(--ink-200);
-  --primary-text-color: var(--ink-300);
-  --secondary-text-color: var(--ink-200);
-  --tertiary-text-color: var(--ink-100);
+  --table-header-color: var(--ink-100);
+  --primary-text-color: var(--ink-200);
+  --secondary-text-color: var(--ink-100);
+  --tertiary-text-color: var(--neutral-500);
   --app-background-color: var(--neutral-100);
   --main-border-color: var(--neutral-300);
   --active-text-color: var(--teal-400);
