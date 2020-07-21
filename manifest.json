@@ -1,7 +1,7 @@
 {
     "name": "Assembly Design Language",
     "short_name": "Assembly",
-    "start_url": "/",
+    "start_url": "/assembly-design-guidelines/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
