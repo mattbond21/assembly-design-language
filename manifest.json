@@ -6,6 +6,7 @@
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "orientation": "portrait-primary",
+    "prefer_related_applications": true,
     "icons": [
         {
             "src": "images/logo/logo-128x128.png",
