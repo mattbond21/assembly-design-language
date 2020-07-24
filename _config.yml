@@ -9,6 +9,6 @@ sass:
 
 # Setup
 title:            Assembly Design Language
-tagline:          'The Quizlet Design System'
-url:              http://assembly.quizlet.design
+tagline:          'Quizlet Design System'
+url:              https://assembly.quizlet.design
 baseurl:          /assembly-design-language/

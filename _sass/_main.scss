@@ -491,13 +491,13 @@ app {
 }
 
 .nav-name > li > a {
-  color: var(--tertiary-text-color);
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 
   &:hover {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
   }
 }
@@ -509,7 +509,7 @@ app {
 .nav-section-header {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--primary-text-color);
+  color: var(--tertiary-text-color);
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
