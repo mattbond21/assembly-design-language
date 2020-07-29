@@ -1,0 +1,5 @@
+steps:
+- name: quizlet/assembly-design-language:latest
+- name: gcr.io/cloud-builders/gcloud
+  entrypoint: gsutil
+  args: ["-m", "rsync", "-r", "-c", "-d", "./_site", "gs://assembly.quizlet.design"]
