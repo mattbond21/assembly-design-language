@@ -368,10 +368,6 @@ img {
   max-width: 100%;
 }
 
-img.home-page {
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-
 img.example-image {
   border-radius: var(--base-spacing);
 }
@@ -530,7 +526,7 @@ app {
   background-size: cover;
   background-image: url(../images/pages/avatars/avatar-15.png);
   border-radius: 100%;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
   display: inline-block;
   overflow: hidden;
   line-height: 1;
@@ -645,7 +641,7 @@ app {
 .body-three,
 .body-four,
 .body-five {
-  color: var(--ink-300);
+  color: var(--ink-200);
   margin: 0;
 }
 
@@ -811,7 +807,7 @@ app {
 
 .card-components {
   background: url('../images/covers/cover-qz-3.png') center center no-repeat;
-  background-color: var(--ink-300);
+  background-color: var(--ink-200);
   background-size: 260px;
 }
 
