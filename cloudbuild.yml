@@ -1,4 +1,0 @@
-steps:
-- name: quizlet/assembly-design-language:latest
-  entrypoint: gsutil
-  args: ["-m", "rsync", "-r", "-c", "-d", "./_site", "gs://assembly.quizlet.design"]

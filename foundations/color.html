@@ -1,7 +1,7 @@
 ---
 layout: default
 section: Foundations
-title: Colors
+title: Color
 previous: Figma
 previous-path: getting-started/figma
 next: Iconography
@@ -12,9 +12,9 @@ next-path: foundations/iconography
 
 <span class="heading-border"></span>
 
-<p>The color palette is a cornerstone of Quizlet, giving the product an immediate sense of being familiar and warm. The color palette leverages Quizlet’s brand heritage, and builds on its sense of energy, intelligence, and confidence. It adds warmth and a human touch.</p>
+<p>The color palette is a foundation pillar of Quizlet. It gives the product an immediate sense of being familiar and warm. The color palette leverages Quizlet’s brand heritage, and builds on its sense of energy, intelligence, and confidence.</p>
 
-<p>Quizlet is committed to complying with AA standard contrast ratios for all text that is not “incidental”. The color combinations in this guide don’t all comply with the AA standard just yet but we&rsquo;re making progress, especially in dark mode. Make sure you don’t rely on color alone to convey state or meaning.</p>
+<p>Quizlet is committed to complying with AA standard contrast ratios for all text in our dark theme. The color combinations in this guide don’t all comply with the AA standard for light mode, but we&rsquo;re making progress towards being accessible by focusing on our dark theme.</p>
 
 <h3>Primary palette</h3>
 
@@ -63,7 +63,7 @@ next-path: foundations/iconography
 </div>
 
 <h3>Secondary palette</h3>
-<p>Our secondary palette is made up of coral, green, yellow, and orange.</p>
+<p>Our secondary palette is made up of coral, green, yellow, and orange. These should be used sparringly in the UI per the below usage guidelines.</p>
 
 <div class="row">
   <div class="col">
@@ -120,24 +120,34 @@ next-path: foundations/iconography
   </div>
 </div>
 
-<h3>Applying color</h3>
+<hr>
 
+<h3>Applying color</h3>
+<p></p>
+
+<h4>Light theme example</h4>
 <div class="row">
   <div class="col">
     <img src="{{ site.baseurl }}images/pages/color/img-color-example-1.png" class="example-image-border" alt="Example of color in light mode UI">
   </div>
 </div>
 
+<h4>Dark theme example</h4>
 <div class="row">
   <div class="col">
-    <img src="{{ site.baseurl }}images/pages/color/img-color-example-2.png" class="example-image-border" alt="Example of color in dark mode UI">
+    <img src="{{ site.baseurl }}images/pages/color/img-color-example-2.png" class="example-image" alt="Example of color in dark mode UI">
   </div>
 </div>
 
-<h3>Dark mode</h3>
-<p>Philosophy of dark mode</p>
-<p>Shadow usage</p>
+<h4>Tips and guidelines</h4>
+<ul>
+  <li>Do not simply invert a foreground or background colors for our dark theme. The variations and usage guidelines table below outlines the different ways we use color in each theme.</li>
+  <li>The higher a container’s elevation is, the lighter that container background becomes. This technique helps to express depth in both our light and dark themes where we use different color palettes to create structure and hierarchy.</li>
+  <li>The color palette has been deliberately choosen so that our dark theme is as thoughtfully designed as our light theme. For example, the 400 value secondary color palette should be switched to the 300 value in dark theme i.e. <code>--yellow-400</code> in light theme should be <code>--yellow-300</code> in dark theme.</li>
+  <li>Shadows should not be inverted to create a glow effect. Shadows should still be used in the same way as they are in light theme, they are simply more subtle as the backgrounds are darker. We have created background fills that allow a subtle depth to be created when a shadow is used.</li>
+</ul>
 
+<hr>
 
 <h3>Variations and usage guidance</h3>
 
@@ -151,8 +161,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -171,7 +181,7 @@ next-path: foundations/iconography
           </td>
           <td>Neutral 200</td>
           <td>#f6f7fb</td>
-          <td>Canvas background</td>
+          <td>App background</td>
           <td>Not used</td>
         </tr>
         <tr>
@@ -216,8 +226,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -236,7 +246,7 @@ next-path: foundations/iconography
           </td>
           <td>Ink 200</td>
           <td>#303545</td>
-          <td>Primary text, secondary button text, modal backgrounds, and shadows</td>
+          <td>Primary text, secondary action text, modal backgrounds, and shadows</td>
           <td>Secondary surface background (term cards on set page) and primary action text</td>
         </tr>
         <tr>
@@ -255,7 +265,7 @@ next-path: foundations/iconography
           <td>Ink 400</td>
           <td>#1A1D28</td>
           <td>Not used</td>
-          <td>Secondary surface backgrounds</td>
+          <td>App background</td>
         </tr>
         <tr>
           <td>
@@ -264,7 +274,7 @@ next-path: foundations/iconography
           <td>Ink 500</td>
           <td>#13141B</td>
           <td>Not used</td>
-          <td>Canvas background, modal backgrounds, page headers, and shadows</td>
+          <td>Page header backgrounds, and shadows</td>
         </tr>
       </tbody>
     </table>
@@ -279,8 +289,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -342,8 +352,8 @@ next-path: foundations/iconography
           <th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -405,8 +415,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -468,8 +478,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -531,8 +541,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
@@ -594,8 +604,8 @@ next-path: foundations/iconography
 					<th width="10%">Swatch</th>
           <th width="15%">Name</th>
           <th width="15%">HEX</th>
-          <th width="30%">Light mode</th>
-          <th width="30%">Dark mode</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
         </tr>
       </thead>
       <tbody>
