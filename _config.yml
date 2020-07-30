@@ -11,4 +11,4 @@ sass:
 title:            Assembly Design Language
 tagline:          'Quizlet Design System'
 url:              https://assembly.quizlet.design
-baseurl:          /assembly-design-language/
+baseurl:          /
