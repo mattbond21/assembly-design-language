@@ -6,8 +6,8 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "prefer_related_applications": true,
-  "Scope": "/assembly-design-language/",
-  "start_url": "/assembly-design-language/",
+  "Scope": "https://assembly.quizlet.design",
+  "start_url": "https://assembly.quizlet.design",
   "icons": [
     {
       "src": "images/icons/icon-192x192.png",
