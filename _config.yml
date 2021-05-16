@@ -10,5 +10,5 @@ sass:
 # Setup
 title:            Assembly Design Language
 tagline:          'Quizlet Design System'
-url:
-baseurl:          https://mattbond21.github.io/assembly-design-language/
+url:              https://mattbond21.github.io/assembly-design-language/
+baseurl:          https://mattbond21.github.io/
